@@ -6,10 +6,132 @@ body{
     margin: 0;
 }
 
-.card{
+/*----------------------------------------------------MASTHEAD----------------------------*/
+
+.masthead{
+    background-color:firebrick;
+    height: 250px;
+    width: 100vw;
+  }
+
+.homebutton{
     display: flex;
-    flex: auto;
+    position: absolute;
+    top: 16px;
+    left: 20px;
 }
+
+.menu{
+    display: flex;
+    position: absolute;
+    top: 177px;
+    left: 900px;
+}
+
+
+.events{
+    position: absolute;
+    top: 177px;
+    left: 1100px;
+}
+
+.contactbutton{
+    position: absolute;
+    top: 177px;
+    left: 1300px;
+}
+
+/*----------------------------------------------------END MASTHEAD----------------------------*/
+
+
+/*-----------------------TYPE SETTINGS---------------------------*/
+h1 {
+    margin: 0;
+    text-align: left;
+    position: relative;
+    color:azure;
+    Font-Family: 'Shrikhand', Cursive;
+    font-size: 60px;
+    top: 80px;
+    left: 300px;
+    width: 600px;
+  }
+
+  h2 {
+    text-align: left;
+    position: relative;
+    color:black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 50px;
+    font-weight:700;
+    margin-bottom: 0px;
+    padding:0 0 50px 0;
+  }
+
+  
+
+  h3 {
+    text-align: left;
+    position: relative;
+    color:firebrick;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 40px;
+    font-weight:700;
+    margin-bottom: 50px;
+  }
+
+  h4 {
+    text-align: center;
+    position: relative;
+    color:firebrick;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 60px;
+    font-weight:700;
+    margin-bottom: 0px;
+    padding: 0;
+    margin: 0;
+  }
+
+  h6 {
+    text-align: center;
+    position: relative;
+    color:azure;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 60px;
+    font-weight:700;
+    margin-bottom: 0px;
+    padding: 0;
+    margin: 0;
+  }
+
+  h5{
+    text-align: center;
+    position: relative;
+    font-size: 45px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 50px 300px 0px 300px;
+  }
+
+  p2 {
+    text-align: left;
+    position: relative;
+    color:black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 50px;
+    font-weight:700;
+    margin-bottom: 0px;
+    padding:0 0 50px 0;
+  }
+
+  p {
+    margin: 0%;
+    font-size: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 0px 0px 50px 0px;
+  }
+
+
+/*-----------------------END TYPE SETTINGS---------------------------*/
 
 .homepage{
     margin: auto;
@@ -84,6 +206,13 @@ body{
     font-size: 18px;
 }
 
+.contactlabel{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: azure;
+    font-size: 20px;
+ }
+/*-------------------------------------------------------------HAVING TROUBLE HERE----------------------------------*/
+
 @media (max-width: 991px){
     .contact{
         padding: 50px;
@@ -99,6 +228,7 @@ body{
     }
 }
 
+/*-------------------------------------------------------------END TROUBLE ZONE----------------------------------*/
 
 .specialeventspage{
     margin: auto;
@@ -108,6 +238,11 @@ body{
     background-size: cover;
     background-repeat: none;
 }
+
+.candyland{
+    position: relative;  
+  }
+
 
 .menupage{
     margin: auto;
@@ -119,10 +254,7 @@ body{
     width: 100vw;
 }
 
-
 .droppage{
-    display: flex;
-    flex-wrap: wrap;
     margin: auto;
     height: 100vh;
     width: 100vw;
@@ -131,85 +263,40 @@ body{
     background-repeat: none;
 }
 
-.masthead{
+
+.entryimage{
     display: flex;
-    flex-wrap: nowrap;
-    background-color:firebrick;
-    height: 250px;
-    width: 100vw;
-  }
+    justify-content: center;
+    
+}
 
-.homebutton{
+.google{
     display: flex;
-    position: absolute;
-    top: 16px;
-    left: 20px;
+    justify-content:center;
+    position: relative;
+    padding: 40px;
 }
 
-.menu{
+.navleft{
     display: flex;
-    position: absolute;
-    top: 177px;
-    left: 900px;
+    justify-content: center;
+    position: relative;
+    padding: 40px;
 }
 
-
-.events{
-    position: absolute;
-    top: 177px;
-    left: 1100px;
-}
-
-.contactbutton{
-    position: absolute;
-    top: 177px;
-    left: 1300px;
-}
-.entrypagelogo{
+.navright{
     display: flex;
-    position: absolute;
-    top: 50px;
-    left: 425px;
+    justify-content: center;
+    position: relative;
+    padding: 0;
 }
 
-.notoldenough{
-    display: flex;
-    position: absolute;
-    top: 50px;
-    left: 425px;
-}
 
-.border{
-    flex: auto;
-    width: 100vw;
-    margin: auto;
-}
-
-.nobutton{
-    flex: auto;
-    position: absolute;
-    top: 720px;
-    left: 550px;
-}
-
-.yesbutton{
-    position: absolute;
-    top: 720px;
-    left: 900px;
-}
-
-.togoogle{
-    position: absolute;
-    top: 720px;
-    left: 735px;
-}
-
-.menumain{
-    width: 100vw;
-}
 
 .flex-me div {
     flex: 1;
+    flex-wrap: wrap;
+    flex-direction: column;
   }
   
 .left{ 
@@ -222,20 +309,10 @@ body{
   .flex-me {
     padding: 50px 50px 50px 150px;
     display: flex;
-    align-content: space-around;
+    
   }
 
-  h1 {
-    margin: 0;
-    text-align: left;
-    position: relative;
-    color:azure;
-    Font-Family: 'Shrikhand', Cursive;
-    font-size: 60px;
-    top: 80px;
-    left: 300px;
-    width: 600px;
-  }
+  
   
 .slider-frame{
     overflow: hidden;
@@ -330,87 +407,17 @@ body{
     height: 566px;
     width: 1200px;
     position: relative;
-    float: left;
-    
+    float: left;   
 }
 
 /*----------------------END OF ANIIMATION----------------------*/
 
-  h2 {
-    text-align: left;
-    position: relative;
-    color:black;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 50px;
-    font-weight:700;
-    margin-bottom: 0px;
-    padding:0 0 50px 0;
-  }
-
   
-
-  h3 {
-    text-align: left;
-    position: relative;
-    color:firebrick;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 40px;
-    font-weight:700;
-    margin-bottom: 50px;
-  }
-
-  h4 {
-    text-align: center;
-    position: relative;
-    color:firebrick;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 60px;
-    font-weight:700;
-    margin-bottom: 0px;
-    padding: 0;
-    margin: 0;
-  }
-
-  h6 {
-    text-align: center;
-    position: relative;
-    color:azure;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 60px;
-    font-weight:700;
-    margin-bottom: 0px;
-    padding: 0;
-    margin: 0;
-  }
-
- .contactlabel{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: azure;
-    font-size: 20px;
- }
+ 
   
-  p {
-    margin: 0%;
-    font-size: 40px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    padding: 0px 0px 50px 0px;
-  }
-
-  h5{
-    text-align: center;
-    position: relative;
-    font-size: 45px;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    padding: 50px 300px 0px 300px;
-  }
-  .candyland{
-    position: relative;
-    
-  }
-
+  
   .footer{
     width: 100vw;
     position:fixed;
     bottom:0px;
-    
-  }
+}
