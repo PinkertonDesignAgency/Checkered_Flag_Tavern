@@ -22,7 +22,7 @@ head {
     left: 20px;
 }
 
-.menu{
+.menu, .menu-alt{
     display: flex;
     position: absolute;
     top: 177px;
@@ -30,16 +30,24 @@ head {
 }
 
 
-.events{
+.events, .events-alt{
     position: absolute;
     top: 177px;
     left: 1100px;
 }
 
-.contactbutton{
+.contactbutton, .contact-alt{
     position: absolute;
     top: 177px;
     left: 1300px;
+}
+
+.menu-alt, .events-alt, .contact-alt{
+    opacity: 0;
+}
+
+.menu-alt:hover, .events-alt:hover, .contact-alt:hover{
+    opacity: 1;
 }
 
 /*----------------------------------------------------END MASTHEAD----------------------------*/
