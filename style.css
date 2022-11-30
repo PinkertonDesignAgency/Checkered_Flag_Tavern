@@ -139,7 +139,7 @@ h1 {
     width: 100vw;
     background-image: url('../images/grey_texture.png');
     background-size: cover;
-    background-repeat: none;
+    background-repeat: repeat;
 }
 
 .contactpage{
@@ -148,7 +148,7 @@ h1 {
     width: 100vw;
     background-image: url('../images/grey_texture.png');
     background-size: cover;
-    background-repeat: none;
+    background-repeat: repeat;
 }
 
 .contact{
@@ -236,7 +236,7 @@ h1 {
     width: 100vw;
     background-image: url('../images/grey_texture.png');
     background-size: cover;
-    background-repeat: none;
+    background-repeat: repeat;
 }
 
 .candyland{
