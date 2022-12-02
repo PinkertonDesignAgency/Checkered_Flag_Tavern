@@ -15,7 +15,7 @@ head {
     width: 100vw;
   }
 
-.homebutton{
+.home{
     display: flex;
     position: absolute;
     top: 16px;
