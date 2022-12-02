@@ -8,6 +8,7 @@ head {
     size: cover;
   }
 
+  
 /*----------------------------------------------------MASTHEAD----------------------------*/
 
 .masthead{
@@ -15,6 +16,7 @@ head {
     height: 250px;
     width: 100vw;
   }
+
 
 .home{
     display: flex;
@@ -25,7 +27,7 @@ head {
 
 .menu, .menu-alt{
     display: flex;
-    position: absolute;
+    position:absolute;
     top: 177px;
     left: 900px;
 }
@@ -200,6 +202,7 @@ h1 {
 .contactForm{
     width: 500px;
     padding: 40px;
+    margin: 40px 0px 40px 0px;
     background-color: darkcyan;
 }
 
@@ -238,6 +241,7 @@ h1 {
 
 .specialeventspage{
     margin: auto;
+    height: 100vh;
     width: 100vw;
     background-image: url('../images/background.png');
     background-size: cover;
@@ -295,27 +299,15 @@ h1 {
 }
 
 
-
-.flex-me div {
-    flex: 1;
-    flex-wrap: wrap;
-    flex-direction: column;
-  }
-  
-.left{ 
-    margin: 20px 20px 20px 80px;
-  }
-  .right{ 
-    margin: 20px 150px 20px 20px;
-  }
-
-  .flex-me {
-    padding: 50px 50px 50px 150px;
+.flex-me {
     display: flex;
-    
-  }
+    flex-wrap: wrap;
+    padding: 150px 100px 0px 200px;
+}
+.flex-me div{
+    flex:1;
+}
 
-  
   
 .slider-frame{
     overflow: hidden;
@@ -415,11 +407,23 @@ h1 {
 
 /*----------------------END OF ANIIMATION----------------------*/
 
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 100px 200px 200px 200px;
+    }
+    article img{
+        width: 500px;
+        padding: 20px;
+    }
+    .gallery article{
+        flex: 25%;
+    }
+    
+   
+   
   
- 
-  
-  
-  .footer{
+.footer{
     -webkit-animation: blink normal 10s infinite ease-in-out;
     width: 100vw;
     position:fixed;
@@ -438,12 +442,104 @@ h1 {
     }
 }
 
-@media only screen and (max-width:600px) { 
+@media only screen and (max-width:760px) { 
     body {
-       
+       margin: auto;
     }
 
+    h1 {
+        margin: 0;
+        text-align: left;
+        position: relative;
+        color:azure;
+        Font-Family: 'Shrikhand', Cursive;
+        font-size: 50px;
+        top: 40px;
+        left: 250px;
+        width: 300px;
+        -webkit-text-stroke: 1px #fff;
+        color: transparent;
+        background-image: linear-gradient(#fff, #fff);
+        background-repeat: no-repeat;
+        -webkit-background-clip: text;
+        background-position: -750px 0;
+        animation: backcolor 5s linear infinite alternate;
+      }
 
+      h2 {
+        text-align: left;
+        position: relative;
+        color:black;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 40px;
+        font-weight:700;
+        padding:0 0 50px 0;
+      }
 
+      p{
+        text-align: left;
+        margin: 0%;
+        font-size: 25px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        padding: 0px 0px 50px 0px;
+        }
 
+      p2 {
+            text-align: left;
+            position: relative;
+            color:black;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 40px;
+            font-weight:700;
+            margin: 0px 300px 0px 0px;
+            padding:0;
+          }
+
+      h3 {
+        text-align: left;
+        position: relative;
+        color:firebrick;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 40px;
+        font-weight:700;
+        margin-bottom: 50px;
+      }
+
+      h4 {
+        text-align:left;
+        position: relative;
+        color:firebrick;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 30px;
+        font-weight:700;
+        padding: 0;
+        margin: 0px 0px 0px 150px;
+      }
+
+      h5 {
+        text-align: left;
+        position: relative;
+        font-size:30px;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        padding: 40px 50px 0px 150px;
+
+      }
+    
+     .map{
+        max-width: 75%;
+     }
+  
+    .contactForm{
+        max-width: 60%;
+    }
+     
+    .nfl{
+        max-width: 100%;
+    }
+
+    .candy{
+        max-width: 100%;
+    }
+
+    
   }
