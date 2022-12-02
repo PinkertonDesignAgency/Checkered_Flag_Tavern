@@ -1,3 +1,4 @@
+*{box-sizing: border-box;}
 
 head {
     margin: 0%;
@@ -233,28 +234,10 @@ h1 {
     color: azure;
     font-size: 20px;
  }
-/*-------------------------------------------------------------HAVING TROUBLE HERE----------------------------------*/
 
-@media (max-width: 991px){
-    .contact{
-        padding: 50px;
-    }
-    .container{
-        flex-direction: column;
-    }
-    .container .contactInfo{
-        margin-bottom: 40px;
-    }
-    .congtainer .contactInfo{
-        width: 100%;
-    }
-}
-
-/*-------------------------------------------------------------END TROUBLE ZONE----------------------------------*/
 
 .specialeventspage{
     margin: auto;
-    height: 100vh;
     width: 100vw;
     background-image: url('../images/background.png');
     background-size: cover;
@@ -268,7 +251,6 @@ h1 {
 
 .menupage{
     margin: auto;
-    height: 100vh;
     width: 100vw;
 }
 
@@ -278,7 +260,6 @@ h1 {
 
 .droppage{
     margin: auto;
-    height: 100vh;
     width: 100vw;
     background-image: url('../images/background.png');
     background-size: cover;
@@ -456,3 +437,13 @@ h1 {
         opacity:1;
     }
 }
+
+@media only screen and (max-width:600px) { 
+    body {
+       
+    }
+
+
+
+
+  }
