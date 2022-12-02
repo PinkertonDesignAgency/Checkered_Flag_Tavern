@@ -1,9 +1,3 @@
-window.onload = function(){
-
-        const menu_btn = document.querySelector ('.hamburger');
-
-        menu-menu_btn.addEventListener ('click', function() {
-            menu_btn.classList.toggle('is-active');
-        });
-
+function onClickMenu(){
+    document.getElementById('menu').classList.toggle('change');
 }

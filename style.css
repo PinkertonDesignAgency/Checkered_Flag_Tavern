@@ -17,41 +17,41 @@ head {
     width: 100vw;
   }
 
+  #hamburger{
+    left: 80vw;
+    width: 70px;
+    background-color:firebrick;
+    height: 40px;
+    cursor: pointer;
+  }
+  #menu-bar{
+    position: absolute;
+    left: 85vw;
+  }
+  .bar{
+    height: 6px;
+    width: 70px;
+    background-color: #fff;
+    display: block;
+    border-radius: 5px;
 
-.home{
-    display: flex;
+  }
+
+  #bar1{
+    transform: translateY(-4px);
+  }
+
+  #bar3{
+    transform: translateY(4px);
+  }
+.homebutton{
     position: absolute;
     top: 16px;
     left: 20px;
 }
 
-.menu, .menu-alt{
-    display: flex;
-    position:absolute;
-    top: 177px;
-    left: 900px;
-}
 
 
-.events, .events-alt{
-    position: absolute;
-    top: 177px;
-    left: 1100px;
-}
-
-.contactbutton, .contact-alt{
-    position: absolute;
-    top: 177px;
-    left: 1300px;
-}
-
-.menu-alt, .events-alt, .contact-alt{
-    opacity: 0;
-}
-
-.menu-alt:hover, .events-alt:hover, .contact-alt:hover{
-    opacity: 1;
-}
 
 /*----------------------------------------------------END MASTHEAD----------------------------*/
 
@@ -541,6 +541,9 @@ h1 {
         max-width: 100%;
     }
     
+    .masthead{
+        height: 300px;
+    }
     
         
   }
