@@ -26,7 +26,8 @@ head {
   }
   #menu-bar{
     position: absolute;
-    left: 85vw;
+    left: 80vw;
+    padding: 80px 50px 40px 0px;
   }
   .bar{
     height: 6px;
@@ -34,7 +35,6 @@ head {
     background-color: #fff;
     display: block;
     border-radius: 5px;
-
   }
 
   #bar1{
