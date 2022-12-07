@@ -1,71 +1,24 @@
 *{box-sizing: border-box;}
 
-head {
-    margin: 0%;
+
+body {
+    margin: 0;
+    padding: 0;
   }
-  body {
-    margin-bottom: 250px;
-    size: cover;
-  }
+ 
 
-  
-/*----------------------------------------------------MASTHEAD----------------------------*/
-
-.masthead{
-    background-color:firebrick;
-    height: 250px;
-    width: 100vw;
-  }
-
-  #hamburger{
-    left: 80vw;
-    width: 70px;
-    background-color:firebrick;
-    height: 40px;
-    cursor: pointer;
-  }
-  #menu-bar{
-    position: absolute;
-    left: 80vw;
-    padding: 80px 50px 40px 0px;
-  }
-  .bar{
-    height: 6px;
-    width: 70px;
-    background-color: #fff;
-    display: block;
-    border-radius: 5px;
-  }
-
-  #bar1{
-    transform: translateY(-4px);
-  }
-
-  #bar3{
-    transform: translateY(4px);
-  }
-.homebutton{
-    position: absolute;
-    top: 16px;
-    left: 20px;
-}
-
-
-
-
-/*----------------------------------------------------END MASTHEAD----------------------------*/
 
 
 /*-----------------------TYPE SETTINGS---------------------------*/
 h1 {
-    margin: 0;
+    
     text-align: left;
     position: relative;
     color:azure;
     Font-Family: 'Shrikhand', Cursive;
-    font-size: 60px;
+    font-size: 80px;
     top: 80px;
-    left: 300px;
+    left: 350px;
     width: 600px;
     -webkit-text-stroke: 1px #fff;
     color: transparent;
@@ -134,7 +87,15 @@ h1 {
     position: relative;
     font-size: 45px;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    padding: 50px 300px 0px 300px;
+    padding: 40px 50px 0px 40px;
+  }
+
+  h7{
+    text-align: left;
+    position: relative;
+    font-size: 40px;
+    font-weight: 700;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   }
 
   p2 {
@@ -158,22 +119,12 @@ h1 {
 
 /*-----------------------END TYPE SETTINGS---------------------------*/
 
-.homepage{
-    margin: auto;
-    height: 100vh;
-    width: 100vw;
-    background-image: url('../images/background.png');
-    background-size: cover;
-    background-repeat: repeat;
-}
 
-.contactpage{
-    margin: auto;
-    height: 100vh;
-    width: 100vw;
-    background-image: url('../images/background.png');
-    background-size: cover;
-    background-repeat: repeat;
+
+
+
+.map{
+    padding: 50px 0;
 }
 
 .contact{
@@ -202,7 +153,7 @@ h1 {
 .contactForm{
     width: 500px;
     padding: 40px;
-    margin: 40px 0px 40px 0px;
+    margin: 133px 50px 40px 0px;
     background-color: darkcyan;
 }
 
@@ -239,14 +190,7 @@ h1 {
  }
 
 
-.specialeventspage{
-    margin: auto;
-    height: 100vh;
-    width: 100vw;
-    background-image: url('../images/background.png');
-    background-size: cover;
-    background-repeat: repeat;
-}
+
 
 .candyland{
     position: relative;  
@@ -309,13 +253,36 @@ h1 {
 }
 
   
+
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 100px 200px 200px 200px;
+    }
+    article img{
+        width: 500px;
+        padding: 20px;
+    }
+    .gallery article{
+        flex: 25%;
+    }
+    
+   
+   
+  
+.footer{
+    -webkit-animation: blink normal 10s infinite ease-in-out;
+    width: 100vw;
+    position:fixed;
+    bottom:0px;
+}
+
 .slider-frame{
     overflow: hidden;
     height: 566px;
-    width: 1200px;
-    margin-left: 285px;
-    margin-top: 0px;
-    margin-bottom: 40px;
+    width: 100vw;
+    display: flex;
+    position: relative;
 }
 
 /*------------- SLIDE ANIMATION----------------*/
@@ -362,10 +329,11 @@ h1 {
 
 .slider-frameb{
     overflow: hidden;
-    height: 566px;
+    height: 566px;  
     width: 1200px;
-    margin-left: 285px;
-    margin-top: 0px;
+    display: flex;
+    position: relative;
+
 }
 
 /*------------- SLIDE ANIMATION----------------*/
@@ -396,39 +364,101 @@ h1 {
     -webkit-animation-play-state: running;
 }
 
-
+article{
+    padding: 40px;
+}
 
 .img-containerb{
     height: 566px;
     width: 1200px;
     position: relative;
-    float: left;   
+    float: center;   
 }
 
 /*----------------------END OF ANIIMATION----------------------*/
 
-.gallery{
-    display: flex;
-    flex-wrap: wrap;
-    margin: 100px 200px 200px 200px;
-    }
-    article img{
-        width: 500px;
-        padding: 20px;
-    }
-    .gallery article{
-        flex: 25%;
-    }
-    
-   
-   
-  
-.footer{
-    -webkit-animation: blink normal 10s infinite ease-in-out;
-    width: 100vw;
-    position:fixed;
-    bottom:0px;
+
+
+/*----------------------------------------------------MASTHEAD----------------------------*/
+
+
+
+.title{
+    padding: 0 0 120px 0;
 }
+.homebutton{
+    position: absolute;
+    top: 16px;
+    left: 20px;
+    padding: 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: firebrick;
+    color: #fff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+
+.navbar-links{
+    display: flex;
+    width: 100%;
+    background-color: black;
+     
+ }
+
+ .navbar {
+    flex-direction: column;
+    align-items:flex-start;
+ }
+
+ .navbar-links ul {
+    width: 100%;
+    flex-direction: column;
+    
+ }
+
+ .navbar-links li {
+    text-align: center;
+    flex-direction: column;
+ }
+
+ .navbar-links li a {
+    padding: 1rem 1rem;
+ }
+
+.navbar-links li a{
+    text-decoration: none;
+    color: white;
+    padding: 1.5rem;
+    display: block;
+}
+
+.toggle-button{
+    position: absolute;
+    top: 12rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 70px;
+    height: 40px;
+}
+
+.toggle-button .bar {
+    height: 6px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+
+/*----------------------------------------------------END MASTHEAD----------------------------*/
+
 
 @-webkit-keyframes blink {
     0% {
@@ -442,20 +472,24 @@ h1 {
     }
 }
 
-@media only screen and (max-width:760px) { 
+@media only screen and (max-width:768px) { 
     body {
        margin: auto;
     }
+    
+    .homebutton{
+        max-width:600%;
+    }
 
     h1 {
-        margin: 0;
+        margin-top: 50px;
         text-align: left;
         position: relative;
         color:azure;
         Font-Family: 'Shrikhand', Cursive;
         font-size: 50px;
         top: 40px;
-        left: 250px;
+        left: 225px;
         width: 300px;
         -webkit-text-stroke: 1px #fff;
         color: transparent;
@@ -467,36 +501,36 @@ h1 {
       }
 
       h2 {
-        text-align: left;
+        text-align: center;
         position: relative;
         color:black;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         font-size: 40px;
         font-weight:700;
-        padding:0 0 50px 0;
+       
       }
 
       p{
-        text-align: left;
+        text-align: center;
         margin: 0%;
         font-size: 25px;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        padding: 0px 0px 50px 0px;
+        
         }
 
-      p2 {
-            text-align: left;
+      p2{
+            text-align: center;
             position: relative;
             color:black;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             font-size: 40px;
             font-weight:700;
-            margin: 0px 300px 0px 0px;
-            padding:0;
+            margin: 0px 50px 0px 0px;
+           
           }
 
       h3 {
-        text-align: left;
+        text-align: center;
         position: relative;
         color:firebrick;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -506,31 +540,46 @@ h1 {
       }
 
       h4 {
-        text-align:left;
+        text-align:center;
         position: relative;
         color:firebrick;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-size: 30px;
+        font-size: 40px;
         font-weight:700;
         padding: 0;
-        margin: 0px 0px 0px 150px;
+        margin: 0px 0px 0px 0px;
       }
 
       h5 {
-        text-align: left;
+        text-align: center;
         position: relative;
         font-size:30px;
         font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        padding: 40px 50px 0px 150px;
+        padding: 40px 50px 0px 40px;
+      }
 
+      h7{
+        padding: 50px 0;
+        text-align: left;
+        position: relative;
+        font-size: 30px;
+        font-weight: 600;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
       }
     
-     .map{
-        max-width: 75%;
+    
+
+    .homebutton{
+        display: flex;
+        max-width: 400%;
+    }
+    .map{
+        max-width: 100%;
      }
   
     .contactForm{
         max-width: 60%;
+        
     }
      
     .nfl{
@@ -541,9 +590,7 @@ h1 {
         max-width: 100%;
     }
     
-    .masthead{
-        height: 300px;
-    }
-    
-        
   }
+
+  
+
