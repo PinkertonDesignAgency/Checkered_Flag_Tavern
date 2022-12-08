@@ -189,15 +189,6 @@ h1 {
     font-size: 20px;
  }
 
-
-
-
-.candyland{
-    position: relative;  
-    align-self:center;
-  }
-
-
 .menupage{
     margin: auto;
     width: 100vw;
@@ -206,15 +197,6 @@ h1 {
 .menumain{
     width: 100vw;
 }
-
-.droppage{
-    margin: auto;
-    width: 100vw;
-    background-image: url('../images/background.png');
-    background-size: cover;
-    background-repeat: none;
-}
-
 
 .entryimage{
     display: flex;
@@ -289,23 +271,23 @@ h1 {
 /*------------- SLIDE ANIMATION----------------*/
 
 @-webkit-keyframes slide_animation{
-    0% {left: 0px;}
-    10% {left: 0px;}
-    20% {left: 1200px;}
-    30% {left: 1200px;}
-    40% {left: 2400px;}
-    50% {left: 2400px;}
-    60% {left: 1200px;}
-    70% {left: 1200px;}
-    80% {left: 0px;}
-    90% {left: 0px;}
-    100% {left: 0px;}
+    0% {left: 0;}
+    10% {left: 0;}
+    20% {left: 100vw;}
+    30% {left: 100vw;}
+    40% {left: 200vw;}
+    50% {left: 200vw;}
+    60% {left: 100vw;}
+    70% {left: 100vw;}
+    80% {left: 0;}
+    90% {left: 0;}
+    100% {left: 0;}
 }
 
 .slide-images{
-    width: 3600px;
+    width: 300vw;
     height: 566px;
-    margin: 0 0 0 -2400px;
+    margin: 0 0 0 -200vw;
     position: relative;
     -webkit-animation-name:slide_animation;
     -webkit-animation-duration: 33s;
@@ -317,8 +299,9 @@ h1 {
 
 
 .img-container{
+    display: flex;
     height: 566px;
-    width: 1200px;
+    width: 100vw;
     position: relative;
     float: left;
     
@@ -330,8 +313,8 @@ h1 {
 
 .slider-frameb{
     overflow: hidden;
-    height: 566px;  
-    width: 1200px;
+    height: 566px;
+    width: 100vw;
     display: flex;
     position: relative;
 
@@ -340,23 +323,23 @@ h1 {
 /*------------- SLIDE ANIMATION----------------*/
 
 @-webkit-keyframes slide_animation{
-    0% {left: 0px;}
-    10% {left: 0px;}
-    20% {left: 1200px;}
-    30% {left: 1200px;}
-    40% {left: 2400px;}
-    50% {left: 2400px;}
-    60% {left: 1200px;}
-    70% {left: 1200px;}
-    80% {left: 0px;}
-    90% {left: 0px;}
-    100% {left: 0px;}
+    0% {left: 0;}
+    10% {left: 0;}
+    20% {left: 100vw;}
+    30% {left: 100vw;}
+    40% {left: 200vw;}
+    50% {left: 200vw;}
+    60% {left: 100vw;}
+    70% {left: 100vw;}
+    80% {left: 0;}
+    90% {left: 0;}
+    100% {left: 0;}
 }
 
 .slide-imagesb{
-    width: 3600px;
+    width: 300vw;
     height: 566px;
-    margin: 0 0 0 -2400px;
+    margin: 0 0 0 -200vw;
     position: relative;
     -webkit-animation-name:slide_animation;
     -webkit-animation-duration: 33s;
@@ -365,15 +348,14 @@ h1 {
     -webkit-animation-play-state: running;
 }
 
-article{
-    padding: 40px;
-}
+
 
 .img-containerb{
+    display: flex;
     height: 566px;
-    width: 1200px;
+    width: 100vw;
     position: relative;
-    float: center;   
+    float: left;
 }
 
 /*----------------------END OF ANIIMATION----------------------*/
@@ -532,6 +514,10 @@ article{
             flex: 25%;
         }
         
+        article{
+            padding: 40px;
+        }
+
 
       p{
         text-align: center;
@@ -614,11 +600,13 @@ article{
         left: 38px;
     }
    
-    .entryimage{
-        display: flex;
-        justify-content: center;
+    .entrypagelogo{
+        max-width: 80%;
+        align-self:  center;
         
     }
+
+
 
   }
 
