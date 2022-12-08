@@ -486,7 +486,7 @@ h1 {
         color:azure;
         Font-Family: 'Shrikhand', Cursive;
         font-size: 60px;
-        top: 40px;
+        top: 0;
         left: 280px;
         width: 300px;
         -webkit-text-stroke: 1px #fff;
@@ -670,9 +670,9 @@ h1 {
         Font-Family: 'Shrikhand', Cursive;
         font-size: 35px;
         font-weight: 200;
-        top: 80px;
-        left: 120px;
-        width: 250px;
+        top: 40px;
+        left: 180px;
+        width: 200px;
         -webkit-text-stroke: 1px #fff;
         color: transparent;
         background-image: linear-gradient(#fff, #fff);
