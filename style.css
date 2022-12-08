@@ -399,7 +399,7 @@ h1 {
 
 .navbar-links{
     display: flex;
-    width: 100vw;
+    width: 100%;
     background-color: black;
       
  }
@@ -410,13 +410,15 @@ h1 {
  }
 
  .navbar-links ul {
-    width: 100vw;
+    margin: 0;
+    padding: 0;
+    width: 100%;
     flex-direction: column;
     
  }
 
  .navbar-links li {
-    width: 100vw;
+    width: 100%;
     text-align: center;
     flex-direction: column;
  }
@@ -424,11 +426,11 @@ h1 {
 
 
 .navbar-links li a{
-    width: 100vw;
+    width: 100%;
     text-decoration: none;
     color: white;
     padding: 1.5rem;
-    display: block;
+    display: flex;
     
 }
 
@@ -449,6 +451,7 @@ h1 {
     background-color: #fff;
     border-radius: 10px;
 }
+
 
 
 /*----------------------------------------------------END MASTHEAD----------------------------*/
