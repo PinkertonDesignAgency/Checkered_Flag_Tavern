@@ -6,7 +6,121 @@ body {
     padding: 0;
   }
  
-
+  .hamburger-nav {
+    display: flex;
+    width: 100vw;
+  }
+  /* START of desktop menu for 768 media query */
+  
+  
+  .menu-mobile {
+    display: none;
+  }
+  /* END of desktop menu for 768 media query */
+  
+  /* medium to small devices (768px and smaller aka mobile) */
+  
+    /* START of Mobile Menu */
+    .nav {
+      display: block;
+      position: fixed;
+      top: 0px;
+      left: 0px;
+      width: 100%;
+      z-index: 900;
+    }
+  
+    .icon {
+      position: fixed;
+      cursor: pointer;
+      top: 5%;
+      right: 0%;
+      width: 60px;
+      height: 45px;
+      transform: translate(-50%, -50%);
+      display: block;
+      z-index: 1000;
+    }
+  
+    .hamburger {
+      width: 60px;
+      height: 4px;
+      line-height: 70px;
+      background: #fff;
+      border-radius: 5px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      transition: 0.5s;
+    }
+  
+    .hamburger:before,
+    .hamburger:after {
+      content: '';
+      position: absolute;
+      width: 60px;
+      height: 4px;
+      background: #fff;
+      border-radius: 5px;
+      transition: 0.5s;
+    }
+  
+    .hamburger:before {
+      top: -10px;
+    }
+  
+    .hamburger:after {
+      top: 10px;
+    }
+  
+    .icon.active .hamburger {
+      background: rgba(0, 0, 0, 0);
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0);
+    }
+  
+    .icon.active .hamburger:before {
+      top: 0;
+      transform: rotate(45deg);
+    }
+  
+    .icon.active .hamburger:after {
+      top: 0;
+      transform: rotate(135deg);
+    }
+  
+    .menu-mobile {
+      background-color: #000;
+      height: 100vh;
+      position: fixed;
+      width: 100%;
+      z-index: 999;
+      padding-top: 150px;
+      font-family: 'Helvetica', sans-serif;
+      text-align: center;
+    }
+  
+    .menu-mobile,
+    .menu-mobile a {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+    }
+    .menu-mobile a {
+      clear: right;
+      text-decoration: none;
+      color: #fff;
+      height: 70px;
+      line-height: 70px;
+    }
+    .menu-mobile a:hover {
+      color: firebrick;
+    }
+  
+    .menu-mobile {
+      display: none;
+    }
+  
 
 
 /*----------------------------------------------------START TYPE SETTINGS---------------------------*/
@@ -19,7 +133,7 @@ h1 {
     font-size: 80px;
     top: 80px;
     left: 350px;
-    width: 600px;
+    width: 700px;
     -webkit-text-stroke: 1px #fff;
     color: transparent;
     background-image: linear-gradient(#fff, #fff);
@@ -397,60 +511,7 @@ h1 {
 }
 
 
-.navbar-links{
-    display: flex;
-    width: 100%;
-    background-color: black;
-      
- }
 
- .navbar {
-    flex-direction: column;
-    
- }
-
- .navbar-links ul {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    flex-direction: column;
-    
- }
-
- .navbar-links li {
-    width: 100%;
-    text-align: center;
-    flex-direction: column;
- }
-
-
-
-.navbar-links li a{
-    width: 100%;
-    text-decoration: none;
-    color: white;
-    padding: 1.5rem;
-    display: flex;
-    
-}
-
-.toggle-button{
-    position: absolute;
-    top: 18rem;
-    right: 2rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 70px;
-    height: 40px;
-}
-
-.toggle-button .bar {
-    height: 6px;
-    width: 100%;
-    background-color: #fff;
-    border-radius: 10px;
-}
 
 
 /*----------------------------------------------------END MASTHEAD----------------------------*/
@@ -599,16 +660,7 @@ h1 {
         max-width: 400%;
     }
 
-    .toggle-button{
-        position: absolute;
-        top: 18rem;
-        right: 3rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        width: 70px;
-        height: 40px;
-    }
+   
     .map{
         max-width: 100%;
      }
@@ -653,16 +705,7 @@ h1 {
         max-width: 300%;
     }
 
-    .toggle-button{
-        position: absolute;
-        top: 10rem;
-        right: 1.5rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        width: 35px;
-        height: 40px;
-    }
+   
 
     h1 {
         margin: 0;

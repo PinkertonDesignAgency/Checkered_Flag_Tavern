@@ -1,6 +1,18 @@
-const toggleButton = document.getElementsByClassName('toggle-button')[0]
-const navbarLinks = document.getElementsByClassName('navbar-links')[0]
+'use strict'
 
-toggleButton.addEventListener('click', () =>{
-    navbarLinks.classList.toggle('active')
-})
+function toggleIcon() {
+  $('.icon').on('click', function () {
+    $('.icon').toggleClass('active')
+    $('.menu-mobile').slideToggle(300)
+  })
+}
+
+function closeMobileMenu() {
+  $('.menu-mobile').on('click', 'a', function () {
+    $('.icon').trigger('click')
+  })
+}
+
+//when the page loads call toggleIcon;
+$(toggleIcon)
+$(closeMobileMenu)
