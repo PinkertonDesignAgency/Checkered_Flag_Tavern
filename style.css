@@ -648,7 +648,7 @@ h1 {
 
     .homebutton{
         display: flex;
-        max-width: 350%;
+        max-width: 300%;
     }
 
     .toggle-button{
