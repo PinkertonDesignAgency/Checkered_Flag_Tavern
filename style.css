@@ -9,7 +9,7 @@ body {
 
 
 
-/*-----------------------TYPE SETTINGS---------------------------*/
+/*----------------------------------------------------START TYPE SETTINGS---------------------------*/
 h1 {
     
     text-align: left;
@@ -117,7 +117,7 @@ h1 {
   }
 
 
-/*-----------------------END TYPE SETTINGS---------------------------*/
+/*-------------------------------------------------------------END TYPE SETTINGS---------------------------*/
 
 
 
@@ -198,6 +198,10 @@ h1 {
     width: 100vw;
 }
 
+.menualt{
+    display: none;
+}
+
 .entryimage{
     display: flex;
     justify-content: center;
@@ -222,7 +226,7 @@ h1 {
     display: flex;
     justify-content: center;
     position: relative;
-    padding: 0;
+    padding: 40px;
 }
 
 
@@ -235,16 +239,18 @@ h1 {
     flex:1;
 }
 
-  
+ article{
+    padding: 80px;
+ } 
 
 .gallery{
     display: flex;
     flex-wrap: wrap;
-    margin: 100px 200px 200px 200px;
+   
     }
     article img{
         width: 500px;
-        padding: 20px;
+        
     }
     .gallery article{
         flex: 25%;
@@ -259,6 +265,8 @@ h1 {
     position:fixed;
     bottom:0px;
 }
+
+/*----------------------------------------------------------------------------START HOMEPAGE IMAGE SLIDER----------------------------*/
 
 .slider-frame{
     overflow: hidden;
@@ -309,7 +317,9 @@ h1 {
 
 /*----------------------END OF ANIIMATION----------------------*/
 
+/*----------------------------------------------------------------------------END HOMEPAGE IMAGE SLIDER----------------------------*/
 
+/*----------------------------------------------------------------------------START EVENTS IMAGE SLIDER----------------------------*/
 
 .slider-frameb{
     overflow: hidden;
@@ -360,10 +370,9 @@ h1 {
 
 /*----------------------END OF ANIIMATION----------------------*/
 
+/*----------------------------------------------------------------------------END EVENTS IMAGE SLIDER----------------------------*/
 
-
-/*----------------------------------------------------MASTHEAD----------------------------*/
-
+/*----------------------------------------------------------------------------MASTHEAD----------------------------*/
 
 
 .title{
@@ -375,6 +384,7 @@ h1 {
     left: 20px;
     padding: 20px;
 }
+
 
 .navbar {
     display: flex;
@@ -389,43 +399,44 @@ h1 {
 
 .navbar-links{
     display: flex;
-    width: 100%;
+    width: 100vw;
     background-color: black;
-     
+      
  }
 
  .navbar {
     flex-direction: column;
-    align-items:flex-start;
+    
  }
 
  .navbar-links ul {
-    width: 100%;
+    width: 100vw;
     flex-direction: column;
     
  }
 
  .navbar-links li {
+    width: 100vw;
     text-align: center;
     flex-direction: column;
  }
 
- .navbar-links li a {
-    padding: 1rem 1rem;
- }
+
 
 .navbar-links li a{
+    width: 100vw;
     text-decoration: none;
     color: white;
     padding: 1.5rem;
     display: block;
+    
 }
 
 .toggle-button{
     position: absolute;
-    top: 12rem;
-    right: 1rem;
-    display: none;
+    top: 18rem;
+    right: 2rem;
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: 70px;
@@ -443,6 +454,9 @@ h1 {
 /*----------------------------------------------------END MASTHEAD----------------------------*/
 
 
+/*----------------------------------------------------MEDIA QUERY START----------------------------*/
+
+
 @-webkit-keyframes blink {
     0% {
         opacity:1;
@@ -455,7 +469,7 @@ h1 {
     }
 }
 
-@media only screen and (max-width:768px) { 
+@media (max-width:900px) { 
     body {
        margin: auto;
     }
@@ -463,6 +477,7 @@ h1 {
     .homebutton{
         max-width:600%;
     }
+
 
     h1 {
         margin-top: 50px;
@@ -472,7 +487,7 @@ h1 {
         Font-Family: 'Shrikhand', Cursive;
         font-size: 60px;
         top: 40px;
-        left: 260px;
+        left: 280px;
         width: 300px;
         -webkit-text-stroke: 1px #fff;
         color: transparent;
@@ -581,6 +596,17 @@ h1 {
         display: flex;
         max-width: 400%;
     }
+
+    .toggle-button{
+        position: absolute;
+        top: 18rem;
+        right: 3rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 70px;
+        height: 40px;
+    }
     .map{
         max-width: 100%;
      }
@@ -606,7 +632,14 @@ h1 {
         
     }
 
-
+    .menumain{
+        display: none;
+    }
+    
+    .menualt{
+        display: flex;
+        width: 100vw;
+    }
 
   }
 
@@ -618,6 +651,17 @@ h1 {
         max-width: 350%;
     }
 
+    .toggle-button{
+        position: absolute;
+        top: 10rem;
+        right: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 60px;
+        height: 40px;
+    }
+
     h1 {
         margin: 0;
         text-align: left;
@@ -625,6 +669,7 @@ h1 {
         color:azure;
         Font-Family: 'Shrikhand', Cursive;
         font-size: 35px;
+        font-weight: 200;
         top: 80px;
         left: 200px;
         width: 250px;
