@@ -212,6 +212,16 @@ h1 {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   }
 
+  p3{
+        color: #fff;
+        text-align: left;
+        position: relative;
+        font-size: 40px;
+        font-weight: 700;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      
+  }
+
   p2 {
     text-align: left;
     position: relative;
@@ -241,67 +251,24 @@ h1 {
     padding: 50px 0;
 }
 
-.contact{
-    position: relative;
-    min-height: 100vh;
-    padding: 50px 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-size: cover;
+
+.left{
+    padding-right: 100px;
 }
 
-.contact .content{
-    max-width: 800px;
-    text-align: center;
-
+.right{
+    padding-left: 100px;
 }
-
-.contact .content p{
-   font-size: 36px;
-   font-weight:500;
-}
-
 
 .contactForm{
-    width: 500px;
-    padding: 40px;
-    margin: 133px 50px 40px 0px;
+    justify-content:space-between;
+    width: auto;
     background-color: darkcyan;
 }
 
-.contactForm .inputBox{
-    position: relative;
-    width: 100%;
-    margin-top: 10px;
-}
 
-.contactForm .inputBox input,
-.contactForm .inputBox textarea {
-    width: 100%;
-    padding: 5px 0;
-    font-size: 16px;
-    margin: 10px 0;
-    border: none;
-    border-bottom: 2px solid #333;
-    outline: none;
-}
-.contactForm .inputBox input[type="submit"]{
-    width: 100px;
-    background: azure;
-    color: black;
-    border: none;
-    cursor: pointer;
-    padding: 10px;
-    font-size: 18px;
-}
 
-.contactlabel{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: azure;
-    font-size: 20px;
- }
+
 
 .menupage{
     margin: auto;
@@ -319,7 +286,19 @@ h1 {
 .entryimage{
     display: flex;
     justify-content: center;
+    position: relative;
+    padding: 40px;
     
+}
+
+.facebook{
+    max-width: 20%;
+    position: relative;
+}
+
+.instagram{
+    max-width: 20%;
+    position: relative;
 }
 
 .google{
@@ -345,12 +324,9 @@ h1 {
 
 
 .flex-me {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 150px 100px 0px 200px;
-}
-.flex-me div{
-    flex:1;
+    margin: 40px 60px;
+    text-align: center;
+    align-content: center;
 }
 
  article{
@@ -549,7 +525,7 @@ h1 {
         color:azure;
         Font-Family: 'Shrikhand', Cursive;
         font-size: 60px;
-        top: 0;
+        top: 60px;
         left: 280px;
         width: 300px;
         -webkit-text-stroke: 1px #fff;
@@ -666,7 +642,7 @@ h1 {
      }
   
     .contactForm{
-        max-width: 60%;
+        width: auto;
         
     }
      
@@ -726,6 +702,16 @@ h1 {
         background-position: -750px 0;
         animation: backcolor 5s linear infinite alternate;
     }
+
+    p3{
+        color: #fff;
+        text-align: left;
+        position: relative;
+        font-size: 25px;
+        font-weight: 700;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      
+  }
 
   }
 
