@@ -551,7 +551,7 @@ h1 {
       .flex-me {
         display: flex;
         flex-wrap: wrap;
-        padding: 50px;
+        padding: 5px;
     }
 
       .gallery{
